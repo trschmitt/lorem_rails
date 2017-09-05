@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  get '/', to: "welcome_controller#index"
+  get '/', to: "welcome#index"
 
-  get 'welcome_controller/show'
+  get '/:name', to: "welcome#show"
 
-  get 'welcome_controller/lorem'
-
+  get '/lorem/standard', to: "welcome#lorem"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
