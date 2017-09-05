@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'welcome_controller/index'
+  get '/', to: "welcome_controller#index"
 
   get 'welcome_controller/show'
 
