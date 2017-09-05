@@ -8,9 +8,9 @@ class WelcomeController < ApplicationController
   end
 
   def lorem
-    if params[:lorem] == "standard"
+    if params[:ipsum_type] == "standard"
       @lorem = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur"
-    elsif params[:lorem] == "batman"
+    elsif params[:ipsum_type] == "batman"
       @lorem = "Breathe in your fears. Face them. To conquer fear, you must become fear. You must bask in the fear of other men. And men fear most what they cannot see. You have to become a terrible thought. A wraith. You have to become an idea! Feel terror cloud your senses. Feel its power to distort. To control. And know that this power can be yours. Embrace your worst fear. Become one with the darkness.
 
       I think you and your friend have found the last game in town. where it hurts, their wallets. It's bold. You gonna count me in?
@@ -39,7 +39,7 @@ class WelcomeController < ApplicationController
 
       Tomorrow, you will be released. If you are bored of brawling with thieves and want to achieve something there is a rare blue flower that grows on the eastern slopes. Pick one of these flowers. If you can carry it to the top of the mountain, you may find what you were looking for in the first place."
 
-    elsif params[:lorem] == "tvipsum"
+    elsif params[:ipsum_type] == "tvipsum"
       @lorem = "As long as we live its you and me baby. There ain't nothin' wrong with that. Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth. Here he comes Here comes Speed Racer. He's a demon on wheels.
 
       Fish don't fry in the kitchen and beans don't burn on the grill. Took a whole lotta tryin' just to get up that hill. Thank you for being a friend. Travelled down the road and back again. Your heart is true you're a pal and a confidant. All of them had hair of gold like their mother the youngest one in curls. Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Doin' it our way. There's nothing we wont try. Never heard the word impossible. This time there's no stopping us.
